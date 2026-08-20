@@ -61,8 +61,11 @@ zinit cdreplay -q
 bindkey -e
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+bindkey "^P" history-search-backward
+bindkey "^N" history-search-forward
 bindkey "^[[C" forward-char
 bindkey "^[[D" backward-char
+bindkey " " magic-space
 
 # History
 HISTSIZE=32768
@@ -112,6 +115,9 @@ bindkey '^X^E' edit-command-line
 # Aliases
 alias vim='nvim'
 alias c='clear'
+
+# Global aliases
+alias -g C='| wl-copy'
 
 # Shell integrations
 eval "$(starship init zsh)"
