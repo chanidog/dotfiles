@@ -121,6 +121,7 @@ alias -g C='| wl-copy'
 
 # Shell integrations
 eval "$(starship init zsh)"
+source ~/.config/zsh/transient-prompt.zsh
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
