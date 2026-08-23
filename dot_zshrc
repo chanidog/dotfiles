@@ -67,6 +67,9 @@ bindkey "^[[C" forward-char
 bindkey "^[[D" backward-char
 bindkey " " magic-space
 
+# Make / a non wordchar
+WORDCHARS=${WORDCHARS//[\/]}
+
 # History
 HISTSIZE=32768
 HISTFILE=~/.zsh_history
