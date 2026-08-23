@@ -97,6 +97,10 @@ setopt INTERACTIVE_COMMENTS
 setopt NO_HASH_CMDS
 setopt NO_HASH_DIRS
 
+# Directory stack for easy jumps
+setopt autopushd
+setopt pushd_ignore_dups
+
 # Color man pages with bat
 export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
